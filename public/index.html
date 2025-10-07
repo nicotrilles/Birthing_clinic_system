@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthing Clinic Scheduler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="logo">Birthing Clinic</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HOME ===== -->
+  <section id="home">
+    <div class="home-container">
+      <h2>Welcome to Our Birthing Clinic</h2>
+      <p>Easily schedule appointments with trusted birthing professionals.</p>
+      <div class="auth-buttons">
+        <button class="btn" onclick="openModal('loginModal')">Login</button>
+        <button class="btn" onclick="openModal('signupModal')">Sign Up</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOGIN MODAL ===== -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('loginModal')">&times;</span>
+      <h3>Login</h3>
+      <form id="login-form">
+        <label>Email / Username:</label>
+        <input type="text" id="login-username" required>
+        <label>Password:</label>
+        <input type="password" id="login-special" required>
+        <button type="submit" class="btn">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== SIGNUP MODAL ===== -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('signupModal')">&times;</span>
+      <h3>Sign Up</h3>
+      <form id="signup-form">
+        <label>Email / Username:</label>
+        <input type="text" id="signup-username" required>
+        <label>Password:</label>
+        <input type="password" id="signup-special" required>
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+ <!-- ===== ABOUT ===== -->
+<section id="about">
+  <!-- Intro Section -->
+  <div class="about-intro">
+    <div class="about-text">
+      <h3>About Us</h3>
+      <p>
+        Welcome to our clinic! We are dedicated to providing compassionate,
+        safe, and professional care for mothers and families. Our mission is to
+        make every birthing journey comfortable, supported, and memorable.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="../media/about.png" alt="Clinic Image">
+    </div>
+  </div>
+
+  <!-- Facilities -->
+  <div class="about-block">
+    <h3>Modern Birthing Facilities</h3>
+    <div class="facilities">
+      <div class="facility">
+        <img src="privateroom.png" alt="Facility 1">
+        <p>Private birthing rooms with modern equipment</p>
+      </div>
+      <div class="facility">
+        <img src="247.png" alt="Facility 2">
+        <p>24/7 medical assistance and monitoring</p>
+      </div>
+      <div class="facility">
+        <img src="postnatal.png" alt="Facility 3">
+        <p>Comfortable recovery and postnatal care</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team -->
+  <!-- Team -->
+<div class="about-block">
+  <h3>Meet Our Team</h3>
+  <div class="team">
+    <!-- Top row: 3 Midwives -->
+    <div class="team-member">
+      <img src="midwife1.png" alt="Midwife 1">
+      <h4>Maria Santos</h4>
+      <p>Midwife</p>
+    </div>
+    <div class="team-member">
+      <img src="midwife2.png" alt="Midwife 2">
+      <h4>Ana Cruz</h4>
+      <p>Midwife</p>
+    </div>
+    <div class="team-member">
+      <img src="midwife3.png" alt="Midwife 3">
+      <h4>Liza Gomez</h4>
+      <p>Midwife</p>
+    </div>
+
+    <!-- Second row: 2 Pediatricians -->
+    <div class="team-member">
+      <img src="pediamale.png" alt="Pediatrician 1">
+      <h4>Dr. John Doe</h4>
+      <p>Pediatrician</p>
+    </div>
+    <div class="team-member">
+      <img src="pediagirl.png" alt="Pediatrician 2">
+      <h4>Dr. Emily Tan</h4>
+      <p>Pediatrician</p>
+    </div>
+
+    <!-- Third row: 3 new members -->
+    <div class="team-member">
+      <img src="staffmal.png" alt="Staff 1">
+      <h4>Alex Reyes</h4>
+      <p>Consultant</p>
+    </div>
+    <div class="team-member">
+      <img src="stafffem.png" alt="Staff 2">
+      <h4>Maria Lopez</h4>
+      <p>Nurse</p>
+    </div>
+    <div class="team-member">
+      <img src="staffmal2.png" alt="Staff 3">
+      <h4>Daniel Cruz</h4>
+      <p>Assistant</p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">
+      <img src="onine sched.png" alt="Appointment">
+      <h3>Online Appointment Scheduling</h3>
+      <p>Book your checkups and consultations easily through our online scheduler.</p>
+    </div>
+    <div class="service">
+      <img src="precare.png" alt="Prenatal">
+      <h3>Prenatal Care</h3>
+      <p>Comprehensive care and monitoring are available in our clinic.</p>
+    </div>
+    
+    <div class="service">
+      <img src="postcare.png" alt="Postnatal">
+      <h3>Postnatal Checkups</h3>
+      <p>Ensure mother and baby remain healthy after birth at our clinic.</p>
+    </div>
+    <div class="service">
+      <img src="emergency.png" alt="Emergency">
+      <h3>Emergency Assistance</h3>
+      <p>24/7 emergency support is available in our clinic.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+  <!-- Left: Message Form -->
+  <div class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Right: Clinic Info -->
+  <div class="contact-info">
+    <h3>Contact Information</h3>
+    <p>
+      Address: 
+      <a class="address-link" href="https://www.google.com/maps/place/City+of+Panabo,+Davao+del+Norte/@7.3381969,125.3338507,11z/data=!3m1!4b1!4m6!3m5!1s0x32f9445a6069e8ff:0x6d7c86d2af94b950!8m2!3d7.3002902!4d125.6804212!16zL20vMDYwMDVr?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+        Panabo, Philippines
+      </a>
+    </p>
+    <p>Phone: +63 912 345 6789</p>
+    <p>Email: info@birthingclinic.com</p>
+    <p>Operating Hours: 24/7</p>
+
+    <div class="socials">
+      <button class="social-btn facebook">
+        <img src="../media/facebook.png" alt="Facebook">
+      </button>
+      <button class="social-btn messenger">
+        <img src="../media/messenger.png" alt="Messenger">
+      </button>
+      <button class="social-btn instagram">
+        <img src="../media/instagram.png" alt="Instagram">
+      </button>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Birthing Clinic Scheduler | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
