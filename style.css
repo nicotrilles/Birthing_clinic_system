@@ -8,7 +8,7 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background: url("../media/bg.jpg") no-repeat center center fixed;
+  background: url("media/bg.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #333;
   scroll-behavior: smooth;
